@@ -32,7 +32,32 @@ let boardSquares;
 let emptySquares;
 let moveInterval;
 
-const createBoard = () => {};
+/**
+ * Rellena cada cuadrado del tablero
+ * @params
+ * square: posición del cuadro
+ * type: tipo del cuadrado (emptySquare, snakeSquare, foodSquare)
+ */
+const drawSnake = (square, type) => {
+  cosnt[(row, column)] = square.split("");
+  boardSquares[row][column] = squareTypes[type];
+  const squareElement = document.getElementById(square);
+};
+
+const createBoard = () => {
+  boardSquares.forEach((row, rowIndex) => {
+    row.forEach((column, columnIndex) => {
+      const squareValue = `${rowIndex}${columnIndex}`;
+
+      const squareElement = document.createElement("div");
+      console.log(squareElement);
+      squareElement.setAttribute("class", "square emptySquare");
+      squareElement.setAttribute("id", squareValue);
+      board.appendChild(squareElement);
+      emptySquares.push(squareValue);
+    });
+  });
+};
 
 const setGame = () => {
   snake = ["00", "01", "02", "03"];
@@ -49,6 +74,7 @@ const setGame = () => {
 
 const startGame = () => {
   setGame();
+  drawSnake();
 };
 
 startButton.addEventListener("click", startGame);
