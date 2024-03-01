@@ -1,0 +1,22 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "Juego de la serpiente",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhuancero/snake-game.git"
+  },
+  "keywords": [
+    "snakegames"
+  ],
+  "author": "DHA Desarrollos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhuancero/snake-game/issues"
+  },
+  "homepage": "https://github.com/dhuancero/snake-game#readme"
+}
